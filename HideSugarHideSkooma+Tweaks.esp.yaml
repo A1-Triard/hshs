@@ -140,9 +140,9 @@
     - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
     - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
     - If ( HSHS_SkoomaCount > 0 )
-    - MessageBox, "You hide away the Moon Sugar and Skooma."
+    - MessageBox, "Вы прячете Лунный Сахар и скууму."
     - Else
-    - MessageBox, "You hide away the Moon Sugar."
+    - MessageBox, "Вы прячете Лунный Сахар."
     - Endif
     - set HSHS_GreetingEmpty to 1
     - ForceGreeting
@@ -168,9 +168,9 @@
     - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
     - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
     - If ( HSHS_SkoomaCount > 0 )
-    - MessageBox, "You hide away the Moon Sugar and Skooma."
+    - MessageBox, "Вы прячете Лунный Сахар и скууму."
     - Else
-    - MessageBox, "You hide away the Moon Sugar."
+    - MessageBox, "Вы прячете Лунный Сахар."
     - Endif
     - set HSHS_GreetingEmpty to 1
     - ForceGreeting
@@ -196,9 +196,9 @@
     - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
     - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
     - If ( HSHS_SkoomaCount > 0 )
-    - MessageBox, "You hide away the Moon Sugar and Skooma."
+    - MessageBox, "Вы прячете Лунный Сахар и скууму."
     - Else
-    - MessageBox, "You hide away the Moon Sugar."
+    - MessageBox, "Вы прячете Лунный Сахар."
     - Endif
     - set HSHS_GreetingEmpty to 1
     - ForceGreeting
@@ -224,9 +224,9 @@
     - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
     - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
     - If ( HSHS_SkoomaCount > 0 )
-    - MessageBox, "You hide away the Moon Sugar and Skooma."
+    - MessageBox, "Вы прячете Лунный Сахар и скууму."
     - Else
-    - MessageBox, "You hide away the Moon Sugar."
+    - MessageBox, "Вы прячете Лунный Сахар."
     - Endif
     - set HSHS_GreetingEmpty to 1
     - ForceGreeting
@@ -252,9 +252,9 @@
     - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
     - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
     - If ( HSHS_SkoomaCount > 0 )
-    - MessageBox, "You hide away the Moon Sugar and Skooma."
+    - MessageBox, "Вы прячете Лунный Сахар и скууму."
     - Else
-    - MessageBox, "You hide away the Moon Sugar."
+    - MessageBox, "Вы прячете Лунный Сахар."
     - Endif
     - set HSHS_GreetingEmpty to 1
     - ForceGreeting
@@ -280,9 +280,9 @@
     - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
     - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
     - If ( HSHS_SkoomaCount > 0 )
-    - MessageBox, "You hide away the Moon Sugar and Skooma."
+    - MessageBox, "Вы прячете Лунный Сахар и скууму."
     - Else
-    - MessageBox, "You hide away the Moon Sugar."
+    - MessageBox, "Вы прячете Лунный Сахар."
     - Endif
     - set HSHS_GreetingEmpty to 1
     - ForceGreeting
@@ -314,9 +314,9 @@
     - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
     - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
     - If ( HSHS_SkoomaCount > 0 )
-    - MessageBox, "You hide away the Moon Sugar and Skooma."
+    - MessageBox, "Вы прячете Лунный Сахар и скууму."
     - Else
-    - MessageBox, "You hide away the Moon Sugar."
+    - MessageBox, "Вы прячете Лунный Сахар."
     - Endif
     - set HSHS_GreetingEmpty to 1
     - ForceGreeting
@@ -366,7 +366,7 @@
   - BNAM:
     - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
     - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
-    - MessageBox, "You hide away the skooma."
+    - MessageBox, "Вы прячете скууму."
     - set HSHS_GreetingEmpty to 1
     - ForceGreeting
 
@@ -390,7 +390,7 @@
   - BNAM:
     - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
     - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
-    - MessageBox, "You hide away the skooma."
+    - MessageBox, "Вы прячете скууму."
     - set HSHS_GreetingEmpty to 1
     - ForceGreeting
 
@@ -414,7 +414,7 @@
   - BNAM:
     - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
     - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
-    - MessageBox, "You hide away the skooma."
+    - MessageBox, "Вы прячете скууму."
     - set HSHS_GreetingEmpty to 1
     - ForceGreeting
 
@@ -438,7 +438,7 @@
   - BNAM:
     - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
     - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
-    - MessageBox, "You hide away the skooma."
+    - MessageBox, "Вы прячете скууму."
     - set HSHS_GreetingEmpty to 1
     - ForceGreeting
 
@@ -462,7 +462,7 @@
   - BNAM:
     - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
     - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
-    - MessageBox, "You hide away the skooma."
+    - MessageBox, "Вы прячете скууму."
     - set HSHS_GreetingEmpty to 1
     - ForceGreeting
 
@@ -486,7 +486,7 @@
   - BNAM:
     - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
     - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
-    - MessageBox, "You hide away the skooma."
+    - MessageBox, "Вы прячете скууму."
     - set HSHS_GreetingEmpty to 1
     - ForceGreeting
 
@@ -516,7 +516,7 @@
   - BNAM:
     - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
     - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
-    - MessageBox, "You hide away the skooma."
+    - MessageBox, "Вы прячете скууму."
     - set HSHS_GreetingEmpty to 1
     - ForceGreeting
 
