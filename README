@@ -1,39 +1,24 @@
+Прячь сахар, прячь скууму
+=========================
 
--------------------------------------------------------------
-Hide the Sugar, Hide the Skooma
--------------------------------------------------------------
--------------------------------------------------------------
+Автоматически скрывает скууму и сахар от торговцев, которые не хотят иметь с ними дела. (Просто нажмите «Торговать» ещё раз после получения отказа.)
 
+Альтернативная твикнутая версия
+-------------------------------
 
-Auto-hides your skooma or sugar while trying to barter with someone who doesn't want any trouble. 
-Just click on Barter again.
+- Также разрешает знахарках-торговцам покупать Лунный Сахар.
+- Также разрешает торговцам, неслучайно имеющим в продаже Лунный Сахар, скууму или трубки скуума, покупать Сахар и скууму:
+  - Ашуману Эрайшах в Трактире Сурана,
+  - Хельвиан Дезель в Доме Земных Наслаждений Дезель в Суране,
+  - Братус Дальс в Клубе Никаких Имен на Плазе Поселения Хлаалу в Вивеке,
+  - Роласа Орен в верхнем поясе Квартала Чужеземцев в Вивеке,
+  - Андилу Дротан в нижнем поясе Квартала Чужеземцев в Вивеке.
 
+Альтернативная твикнутая версия для MCP "Фильтр отказа от предоставления услуг"
+-------------------------------------------------------------------------------
 
+Используйте эту версию если у вас установлен Morrowind Code Path и включена опция «Фильтр отказа отпредоставления услуг» (или же вы используете OpenMW — он поддерживает это). Она полностью убирает сообщения, касающиеся скуумы и Лунного Сахара, при попытках воспользоваться сервисами, отличными от Торговли. Если вы попытаетесь использовать эту версию без необходимой поддержки со стороны установленной игры, вы обнаружите, что все торговцы покупают скууму.
 
-Alternate tweaked version:
--------------------------------------------------------------
-- also lets Wise Women who barter buy moon sugar,
-- also lets vendors who non-randomly sell moon sugar, skooma or paraphernalia buy either from you.
-These are:
-Ashumanu Eraishah at the tradehouse in Suran
-Helviane Desele at Desele's House of Earthly Delights in Suran
-Brathus Dals at the No Name Club in Vivec's Hlaalu Canton plaza
-Rolasa Oren in the upper waistworks of Vivec's Foreign Quarter
-Andilu Drothan in the Lower Waistworks in Vivec's Foreign Quarter
+Подключайте только один ESP файл.
 
-
-Alternate tweaked + MCP "Service refusal filtering" version:
--------------------------------------------------------------
-- use if you have the Morrowind Code Patch installed with the "Service refusal filtering" option checked:
-entirely prevents any skooma- or moon sugar- related interruptions if you try to access services besides Barter.
-You won't even need to automatically hide anything if you ask to for Spells, Training, Repair, etc.
-If you use this without the MCP option, any and all traders will buy skooma and sugar.
-
-
-
-Use only one ESP,
-Will conflict with anything that edits moon sugar/skooma buying restrictions,
-Will not conflict with anything that edits the NPCs mentioned above
-
--------------------------------------------------------------
-v1
+Возможны конфликты с любым модом, также влияюшем на ограничения покупки Лунного Сахара и скуумы. Не конфликтует с модами, изменяющими упомянутых выше NPC.
