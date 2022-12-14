@@ -60,6 +60,8 @@ def main():
     mkdir('ar')
     mkdir('ar/Data Files')
     prepare_text('Readme', 'ar/')
+    prepare_content('HideSugarHideSkooma.esp', 'ar/Data Files/', 2017, 1, 10, 18, 53, 0)
+    prepare_content('HideSugarHideSkooma+Tweaks.esp', 'ar/Data Files/', 2017, 1, 10, 18, 53, 0)
     prepare_content('HideSugarHideSkooma+Tweaks+MCPfiltering.esp', 'ar/Data Files/', 2017, 1, 10, 18, 53, 0)
     make_archive('HideSugarHideSkooma', 'ar')
     rmtree('ar')
