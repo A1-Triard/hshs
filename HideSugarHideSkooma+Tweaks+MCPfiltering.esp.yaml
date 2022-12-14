@@ -2,23 +2,20 @@
   - HEDR:
       version: 1067869798
       type: ESP
-      author: rot
+      author: rot / лок. A1
       description:
-      - 'Hide the sugar, hide the skooma '
-      - when trying to barter with squares
-      - '--- '
-      - Use with MCP "Service refusal filtering"
-      - '---'
-      - 'Tweaked version:'
-      - Lets traders who sell it buy it,
-      - Lets wise women buy the sugar
-      records: 23
+      - Позволяет оперативно прятать Лунный Сахар и скууму, когда торговец жалуется ни их присутствие в инвентаре игрока.
+      - ''
+      - 'Твикнутая версия: кто продает, будет и покупать, еще Сахар будут покупать знахарки.'
+      - ''
+      - Версия для MCP "Фильтр отк. от пред. усл." / OpenMW
+      records: 27
   - MAST: Morrowind.esm
-  - DATA: 79837557
+  - DATA: 79764287
   - MAST: Tribunal.esm
-  - DATA: 4565686
+  - DATA: 6616539
   - MAST: Bloodmoon.esm
-  - DATA: 9631798
+  - DATA: 11799703
 
 - GLOB:
   - NAME: HSHS_GreetingEmpty

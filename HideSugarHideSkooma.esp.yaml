@@ -2,17 +2,18 @@
   - HEDR:
       version: 1067869798
       type: ESP
-      author: rot
+      author: rot / лок. A1
       description:
-      - 'Hide the sugar, hide the skooma '
-      - "when trying to barter with squares\0 Click on Barter again."
-      records: 25
+      - Позволяет оперативно прятать Лунный Сахар и скууму, когда торговец жалуется ни их присутствие в инвентаре игрока.
+      - ''
+      - Минимальная версия.
+      records: 27
   - MAST: Morrowind.esm
-  - DATA: 79837557
+  - DATA: 79764287
   - MAST: Tribunal.esm
-  - DATA: 4565686
+  - DATA: 6616539
   - MAST: Bloodmoon.esm
-  - DATA: 9631798
+  - DATA: 11799703
 
 - GLOB:
   - NAME: HSHS_GreetingEmpty
