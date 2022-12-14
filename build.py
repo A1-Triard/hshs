@@ -36,8 +36,8 @@ def prepare_text(path, d):
             cp1251.write(utf8.read())
 
 def prepare_content(path, d, year, month, day, hour, minute, second):
-  copyfile(path, d + path)
-  write_records_count(d + path)
+  copyfile(path + '.yaml', d + path + '.yaml')
+  write_records_count(d + path + '.yaml')
   assembly_plugin(d + path, year, month, day, hour, minute, second)
 
 def make_archive(name, dir):
@@ -58,9 +58,9 @@ def main():
     if path.exists('ar'):
         rmtree('ar')
     mkdir('ar')
-    copytree('Data Files', 'ar/Data Files')
+    mkdir('ar/Data Files')
     prepare_text('Readme', 'ar/')
-    prepare_content('HideSugarHideSkooma+Tweaks+MCPfiltering.esp.yaml', 'ar/Data Files/', 2017, 1, 10, 18, 53, 0)
+    prepare_content('HideSugarHideSkooma+Tweaks+MCPfiltering.esp', 'ar/Data Files/', 2017, 1, 10, 18, 53, 0)
     make_archive('HideSugarHideSkooma', 'ar')
     rmtree('ar')
 
