@@ -623,7 +623,6 @@
     - ;script will give them back when out of dialogue
     - player->startscript "HSHS_script"
 
-
 - INFO:
   - INAM: '875317795149451008'
   - PNAM: '765712913203398811'
@@ -645,4 +644,3 @@
     - Set KarrodCheapShot to 0
     - StartScript "GoToJailWhenDone"
     - Goodbye
-

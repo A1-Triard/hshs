@@ -612,4 +612,3 @@
     - Set KarrodCheapShot to 0
     - StartScript "GoToJailWhenDone"
     - Goodbye
-
