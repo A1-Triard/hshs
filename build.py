@@ -18,10 +18,10 @@ def assembly_plugin(path, year, month, day, hour, minute, second, keep=False):
     utime(path, (t, t))
 
 def write_records_count(esp_path):
-    with open(esp_path, 'r', encoding='utf-8') as f:
+    with open(esp_path, 'r', encoding='utf-8', newline='\n') as f:
         esp = yaml.load(f, Loader=yaml.FullLoader)
     esp[0]['TES3'][0]['HEDR']['records'] = len(esp) - 1
-    with open(esp_path, 'w', encoding='utf-8') as f:
+    with open(esp_path, 'w', encoding='utf-8', newline='\n') as f:
         yaml.dump(esp, f, allow_unicode=True)
 
 def check_espa_version():
@@ -31,8 +31,8 @@ def check_espa_version():
     sys.exit(1)
 
 def prepare_text(path, d):
-    with open(path.upper(), 'r', encoding='utf-8') as utf8:
-        with open(d + path + '.txt', 'w', encoding='cp1251') as cp1251:
+    with open(path.upper(), 'r', encoding='utf-8', newline='\n') as utf8:
+        with open(d + path + '.txt', 'w', encoding='cp1251', newline='\r\n') as cp1251:
             cp1251.write(utf8.read())
 
 def prepare_content(path, d, year, month, day, hour, minute, second):
