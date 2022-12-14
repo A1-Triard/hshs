@@ -30,9 +30,9 @@ def check_espa_version():
     print('wrong espa version {}'.format(espa.stdout))
     sys.exit(1)
 
-def prepare_text(path, d):
-    with open(path.upper(), 'r', encoding='utf-8', newline='\n') as utf8:
-        with open(d + path + '.txt', 'w', encoding='cp1251', newline='\r\n') as cp1251:
+def prepare_text(path, name, d):
+    with open(path, 'r', encoding='utf-8', newline='\n') as utf8:
+        with open(d + name + '.txt', 'w', encoding='cp1251', newline='\r\n') as cp1251:
             cp1251.write(utf8.read())
 
 def prepare_content(path, d, year, month, day, hour, minute, second):
@@ -59,7 +59,8 @@ def main():
         rmtree('ar')
     mkdir('ar')
     mkdir('ar/Data Files')
-    prepare_text('Readme', 'ar/')
+    prepare_text('README.md', 'Readme', 'ar/')
+    prepare_text('README.en', 'zReadmeEng', 'ar/')
     prepare_content('HideSugarHideSkooma.esp', 'ar/Data Files/', 2017, 1, 10, 18, 53, 0)
     prepare_content('HideSugarHideSkooma+Tweaks.esp', 'ar/Data Files/', 2017, 1, 10, 18, 53, 0)
     prepare_content('HideSugarHideSkooma+Tweaks+MCPfiltering.esp', 'ar/Data Files/', 2017, 1, 10, 18, 53, 0)
