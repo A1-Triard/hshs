@@ -127,7 +127,7 @@
       pc_rank: null
       padding: 0
   - CNAM: Alchemist Service
-  - NAME: You will have to get rid of that Moon Sugar if you want any services from me. I don't want any trouble.
+  - NAME: "Вы должны покончить с этим @Лунным Сахаром#, если хотите что-то получить от меня. Мне не @нужны\x7F# неприятности."
   - SCVR: 0ARX0Khajiit
   - INTV: 0
   - SCVR: 15IX2ingred_moon_sugar_01
@@ -159,7 +159,7 @@
       pc_rank: null
       padding: 0
   - CNAM: Apothecary Service
-  - NAME: You will have to get rid of that Moon Sugar if you want any services from me. I don't want any trouble.
+  - NAME: "Вы должны покончить с этим @Лунным Сахаром#, если хотите что-то получить от меня. Мне не @нужны\x7F# неприятности."
   - SCVR: 0ARX0Khajiit
   - INTV: 0
   - SCVR: 15IX2ingred_moon_sugar_01
@@ -188,6 +188,7 @@
       padding: 0
   - CNAM: Healer Service
   - NAME: You will have to get rid of that Moon Sugar if you want any services from me. I don't want any trouble.
+  - NAME: "Вы должны покончить с этим @Лунным Сахаром#, если хотите что-то получить от меня. Мне не @нужны\x7F# неприятности."
   - SCVR: 0ARX0Khajiit
   - INTV: 0
   - SCVR: 15IX2ingred_moon_sugar_01
@@ -215,7 +216,7 @@
       pc_rank: null
       padding: 0
   - CNAM: Pawnbroker
-  - NAME: You will have to get rid of that Moon Sugar if you want any services from me. I don't want any trouble.
+  - NAME: "Вы должны покончить с этим @Лунным Сахаром#, если хотите что-то получить от меня. Мне не @нужны\x7F# неприятности."
   - SCVR: 0ARX0Khajiit
   - INTV: 0
   - SCVR: 15IX2ingred_moon_sugar_01
@@ -243,7 +244,7 @@
       pc_rank: null
       padding: 0
   - CNAM: Priest Service
-  - NAME: You will have to get rid of that Moon Sugar if you want any services from me. I don't want any trouble.
+  - NAME: "Вы должны покончить с этим @Лунным Сахаром#, если хотите что-то получить от меня. Мне не @нужны\x7F# неприятности."
   - SCVR: 0ARX0Khajiit
   - INTV: 0
   - SCVR: 15IX2ingred_moon_sugar_01
@@ -271,7 +272,7 @@
       pc_rank: null
       padding: 0
   - CNAM: Publican
-  - NAME: You will have to get rid of that Moon Sugar if you want any services from me. I don't want any trouble.
+  - NAME: "Вы должны покончить с этим @Лунным Сахаром#, если хотите что-то получить от меня. Мне не @нужны\x7F# неприятности."
   - SCVR: 0ARX0Khajiit
   - INTV: 0
   - SCVR: 15IX2ingred_moon_sugar_01
@@ -299,7 +300,7 @@
       pc_rank: null
       padding: 0
   - CNAM: Trader Service
-  - NAME: You will have to get rid of that Moon Sugar if you want any services from me. I don't want any trouble.
+  - NAME: "Вы должны покончить с этим @Лунным Сахаром#, если хотите что-то получить от меня. Мне не @нужны\x7F# неприятности."
   - SCVR: 0ARX0Khajiit
   - INTV: 0
   - SCVR: 15IX2ingred_moon_sugar_01
@@ -334,7 +335,7 @@
       padding: 0
   - ONAM: dialog placeholder
   - CNAM: Wise Woman Service
-  - NAME: You will have to get rid of that Moon Sugar if you want any services from me. I don't want any trouble.
+  - NAME: "Вы должны покончить с этим @Лунным Сахаром#, если хотите что-то получить от меня. Мне не @нужны\x7F# неприятности."
   - SCVR: 0ARX0Khajiit
   - INTV: 0
   - SCVR: 15IX2ingred_moon_sugar_01
@@ -354,7 +355,7 @@
       pc_rank: null
       padding: 0
   - CNAM: Alchemist Service
-  - NAME: I'm not going to buy that Skooma from you. Get rid of it and then we can trade.
+  - NAME: Я не собираюсь покупать у вас @скуума#. Избавьтесь от него, а потом поговорим.
   - SCVR: 0ARX0Khajiit
   - INTV: 0
   - SCVR: 15IX2potion_skooma_01
@@ -382,7 +383,7 @@
       pc_rank: null
       padding: 0
   - CNAM: Apothecary Service
-  - NAME: I'm not going to buy that Skooma from you. Get rid of it and then we can trade.
+  - NAME: Я не собираюсь покупать у вас @скуума#. Избавьтесь от него, а потом поговорим.
   - SCVR: 0ARX0Khajiit
   - INTV: 0
   - SCVR: 15IX2potion_skooma_01
@@ -406,7 +407,7 @@
       pc_rank: null
       padding: 0
   - CNAM: Healer Service
-  - NAME: I'm not going to buy that Skooma from you. Get rid of it and then we can trade.
+  - NAME: Я не собираюсь покупать у вас @скуума#. Избавьтесь от него, а потом поговорим.
   - SCVR: 0ARX0Khajiit
   - INTV: 0
   - SCVR: 15IX2potion_skooma_01
@@ -430,7 +431,7 @@
       pc_rank: null
       padding: 0
   - CNAM: Pawnbroker
-  - NAME: I'm not going to buy that Skooma from you. Get rid of it and then we can trade.
+  - NAME: Я не собираюсь покупать у вас @скуума#. Избавьтесь от него, а потом поговорим.
   - SCVR: 0ARX0Khajiit
   - INTV: 0
   - SCVR: 15IX2potion_skooma_01
@@ -454,7 +455,7 @@
       pc_rank: null
       padding: 0
   - CNAM: Priest Service
-  - NAME: I'm not going to buy that Skooma from you. Get rid of it and then we can trade.
+  - NAME: Я не собираюсь покупать у вас @скуума#. Избавьтесь от него, а потом поговорим.
   - SCVR: 0ARX0Khajiit
   - INTV: 0
   - SCVR: 15IX2potion_skooma_01
@@ -478,7 +479,7 @@
       pc_rank: null
       padding: 0
   - CNAM: Publican
-  - NAME: I'm not going to buy that Skooma from you. Get rid of it and then we can trade.
+  - NAME: Я не собираюсь покупать у вас @скуума#. Избавьтесь от него, а потом поговорим.
   - SCVR: 0ARX0Khajiit
   - INTV: 0
   - SCVR: 15IX2potion_skooma_01
@@ -502,7 +503,7 @@
       pc_rank: null
       padding: 0
   - CNAM: Trader Service
-  - NAME: I'm not going to buy that Skooma from you. Get rid of it and then we can trade.
+  - NAME: Я не собираюсь покупать у вас @скуума#. Избавьтесь от него, а потом поговорим.
   - SCVR: 0ARX0Khajiit
   - INTV: 0
   - SCVR: 15IX2potion_skooma_01
@@ -532,7 +533,7 @@
       pc_rank: null
       padding: 0
   - CNAM: Wise Woman Service
-  - NAME: We're not going to buy that Skooma from you. Put it away and we can trade.
+  - NAME: Я не собираюсь покупать у вас @скуума#. Избавьтесь от него, а потом поговорим.
   - SCVR: 0ARX0Khajiit
   - INTV: 0
   - SCVR: 15IX2potion_skooma_01
@@ -547,6 +548,22 @@
 - DIAL:
   - NAME: Greeting 0
   - DATA: Greeting
+
+- INFO:
+  - INAM: '31089205411193327763'
+  - PNAM: '2026826774301919649'
+  - NNAM: '765712913203398811'
+  - DATA:
+      dialog_type: Greeting
+      disp_index: 0
+      rank: null
+      sex: null
+      pc_rank: null
+      padding: 0
+  - ONAM: Rat_rerlas
+  - NAME: Кви?
+  - BNAM:
+    - Choice "Стоять" 1 "Идти" 2
 
 - INFO:
   - INAM: '765712913203398811'
@@ -573,3 +590,26 @@
     - set HSHS_GreetingEmpty to 0
     - ;script will give them back when out of dialogue
     - player->startscript "HSHS_script"
+
+- INFO:
+  - INAM: '875317795149451008'
+  - PNAM: '765712913203398811'
+  - NNAM: '1224319899288117550'
+  - DATA:
+      dialog_type: Greeting
+      disp_index: 0
+      rank: null
+      sex: null
+      pc_rank: null
+      padding: 0
+  - FNAM: Royal Guard
+  - NAME: Стой!  Король подозревает, что ты замышляешь какое-то предательство против его чемпиона. Он не может позволить продолжать все это. По приказу Его Королевского Высочества Короля Хлаалу @Хелсета#, герцога @Морнхолда#, тебя приказано отправить в тюрьму, где ты будешь находиться до тех пор, пока Его Высочество не решит, что ты готов выступить в объявленном ранее состязании.
+  - SCVR: 02sX0KarrodCheapShot
+  - INTV: 1
+  - SCVR: 17XX0karrod
+  - INTV: 1
+  - BNAM:
+    - Set KarrodCheapShot to 0
+    - StartScript "GoToJailWhenDone"
+    - Goodbye
+
