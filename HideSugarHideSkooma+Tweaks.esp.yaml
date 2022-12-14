@@ -1,0 +1,575 @@
+- TES3:
+  - HEDR:
+      version: 1067869798
+      type: ESP
+      author: rot
+      description:
+      - 'Hide the sugar, hide the skooma '
+      - when trying to barter with squares
+      - ''
+      - '---'
+      - 'Tweaked version:'
+      - Lets traders who sell it buy it,
+      - Lets wise women buy the sugar
+      records: 23
+  - MAST: Morrowind.esm
+  - DATA: 79837557
+  - MAST: Tribunal.esm
+  - DATA: 4565686
+  - MAST: Bloodmoon.esm
+  - DATA: 9631798
+
+- GLOB:
+  - NAME: HSHS_GreetingEmpty
+  - FNAM: s
+  - FLTV: 0.0
+
+- GLOB:
+  - NAME: HSHS_SkoomaCount
+  - FNAM: s
+  - FLTV: 0.0
+
+- GLOB:
+  - NAME: HSHS_SugarCount
+  - FNAM: s
+  - FLTV: 0.0
+
+- SCPT:
+  - SCHD:
+      name: HSHS_script
+      vars:
+        shorts: 1
+        longs: 0
+        floats: 0
+      data_size: 1214
+      var_table_size: 8
+  - SCVR:
+    - control
+  - SCDT: "eJyN1L9rg0AUB/C8NJFoCjqURm2Ht5eWu+Jqlw7N7tJNpAlB2niiZuj/2T+if0Y8NSTgu7ssIr4fH+G+nAVg4yd6GMfI5lDDZIHtAzk+LQD697eh\
+           MkVmgwUvdv81xlcH3Hv8cNfJOkmTwy6r3sWhaOSAA9OQqsTIGWO3YJU/2e+2+vPu8mJXbTfpXogirWVnyvj/zRxGwwGxTy7D5yW0XKDkTNpmQmg+\
+           rQ2Yr8JMlkNZK9IaqBVNRSZpRknUaUV6iJsguBbiEpKU21JeX/0WYp9dpuaBLI1i45WiyeVPdF2nyIwmQ2rbRWhCtabDusSMBgMFdg6owtJRDkn5\
+           NHVOJylFOmhGQuRJRQaH6xy43hkCc7p8Hr1l11J/VXnZ2ABwBMHzWnI="
+  - SCTX:
+    - Begin HSHS_script
+    - ''
+    - short control
+    - ''
+    - if ( MenuMode == 0 )
+    - "\tset control to ( control + 1 )"
+    - elseif ( control > 0 )
+    - "\tset control to 0"
+    - endif
+    - ''
+    - "If ( control >= 2 )\t\t;out of MenuMode for two consecutive frames == now out of dialogue/barter"
+    - "\twhile ( HSHS_SugarCount > 0 )\t\t\t\t\t\t\t\t\t\t\t;restore all sugar"
+    - "\t\twhile ( HSHS_SugarCount >= 1000 )"
+    - "\t\t\tplayer->AddItem, \"ingred_moon_sugar_01\", 1000"
+    - "\t\t\tset HSHS_SugarCount to ( HSHS_SugarCount - 1000 )"
+    - "\t\tendwhile"
+    - "\t\twhile ( HSHS_SugarCount >= 100 )"
+    - "\t\t\tplayer->AddItem, \"ingred_moon_sugar_01\", 100"
+    - "\t\t\tset HSHS_SugarCount to ( HSHS_SugarCount - 100 )"
+    - "\t\tendwhile"
+    - "\t\twhile ( HSHS_SugarCount >= 10 )"
+    - "\t\t\tplayer->AddItem, \"ingred_moon_sugar_01\", 10"
+    - "\t\t\tset HSHS_SugarCount to ( HSHS_SugarCount - 10 )"
+    - "\t\tendwhile"
+    - "\t\twhile ( HSHS_SugarCount >= 4 )"
+    - "\t\t\tplayer->AddItem, \"ingred_moon_sugar_01\", 4"
+    - "\t\t\tset HSHS_SugarCount to ( HSHS_SugarCount - 4 )"
+    - "\t\tendwhile"
+    - "\t\twhile ( HSHS_SugarCount >= 1 )"
+    - "\t\t\tplayer->AddItem, \"ingred_moon_sugar_01\", 1"
+    - "\t\t\tset HSHS_SugarCount to ( HSHS_SugarCount - 1 )"
+    - "\t\tendwhile"
+    - "\tendwhile"
+    - "\twhile ( HSHS_SkoomaCount > 0 )\t\t\t\t\t\t\t\t\t\t;restore all skooma"
+    - "\t\twhile ( HSHS_SkoomaCount >= 1000 )"
+    - "\t\t\tplayer->AddItem, \"potion_skooma_01\", 1000"
+    - "\t\t\tset HSHS_SkoomaCount to ( HSHS_SkoomaCount - 1000 )"
+    - "\t\tendwhile"
+    - "\t\twhile ( HSHS_SkoomaCount >= 100 )"
+    - "\t\t\tplayer->AddItem, \"potion_skooma_01\", 100"
+    - "\t\t\tset HSHS_SkoomaCount to ( HSHS_SkoomaCount - 100 )"
+    - "\t\tendwhile"
+    - "\t\twhile ( HSHS_SkoomaCount >= 10 )"
+    - "\t\t\tplayer->AddItem, \"potion_skooma_01\", 10"
+    - "\t\t\tset HSHS_SkoomaCount to ( HSHS_SkoomaCount - 10 )"
+    - "\t\tendwhile"
+    - "\t\twhile ( HSHS_SkoomaCount >= 4 )"
+    - "\t\t\tplayer->AddItem, \"potion_skooma_01\", 4"
+    - "\t\t\tset HSHS_SkoomaCount to ( HSHS_SkoomaCount - 4 )"
+    - "\t\tendwhile"
+    - "\t\twhile ( HSHS_SkoomaCount >= 1 )"
+    - "\t\t\tplayer->AddItem, \"potion_skooma_01\", 1"
+    - "\t\t\tset HSHS_SkoomaCount to ( HSHS_SkoomaCount - 1 )"
+    - "\t\tendwhile"
+    - "\tendwhile"
+    - "\tset control to 0"
+    - "\tStopScript HSHS_script"
+    - Endif
+    - ''
+    - End
+
+- DIAL:
+  - NAME: Service Refusal
+  - DATA: Persuasion
+
+- INFO:
+  - INAM: '2350820932343717228'
+  - PNAM: '315151280209596330'
+  - NNAM: '27431251821030328588'
+  - DATA:
+      dialog_type: Persuasion
+      disp_index: 0
+      rank: null
+      sex: null
+      pc_rank: null
+      padding: 0
+  - CNAM: Alchemist Service
+  - NAME: You will have to get rid of that Moon Sugar if you want any services from me. I don't want any trouble.
+  - SCVR: 0ARX0Khajiit
+  - INTV: 0
+  - SCVR: 15IX2ingred_moon_sugar_01
+  - INTV: 0
+  - SCVR: 37XX0andilu drothan
+  - INTV: 1
+  - SCVR: 47XX0rolasa oren
+  - INTV: 1
+  - BNAM:
+    - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
+    - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
+    - If ( HSHS_SkoomaCount > 0 )
+    - MessageBox, "You hide away the Moon Sugar and Skooma."
+    - Else
+    - MessageBox, "You hide away the Moon Sugar."
+    - Endif
+    - set HSHS_GreetingEmpty to 1
+    - ForceGreeting
+
+- INFO:
+  - INAM: '27431251821030328588'
+  - PNAM: '2350820932343717228'
+  - NNAM: '745815156108126115'
+  - DATA:
+      dialog_type: Persuasion
+      disp_index: 0
+      rank: null
+      sex: null
+      pc_rank: null
+      padding: 0
+  - CNAM: Apothecary Service
+  - NAME: You will have to get rid of that Moon Sugar if you want any services from me. I don't want any trouble.
+  - SCVR: 0ARX0Khajiit
+  - INTV: 0
+  - SCVR: 15IX2ingred_moon_sugar_01
+  - INTV: 0
+  - BNAM:
+    - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
+    - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
+    - If ( HSHS_SkoomaCount > 0 )
+    - MessageBox, "You hide away the Moon Sugar and Skooma."
+    - Else
+    - MessageBox, "You hide away the Moon Sugar."
+    - Endif
+    - set HSHS_GreetingEmpty to 1
+    - ForceGreeting
+
+- INFO:
+  - INAM: '745815156108126115'
+  - PNAM: '27431251821030328588'
+  - NNAM: '1094918899840230767'
+  - DATA:
+      dialog_type: Persuasion
+      disp_index: 0
+      rank: null
+      sex: null
+      pc_rank: null
+      padding: 0
+  - CNAM: Healer Service
+  - NAME: You will have to get rid of that Moon Sugar if you want any services from me. I don't want any trouble.
+  - SCVR: 0ARX0Khajiit
+  - INTV: 0
+  - SCVR: 15IX2ingred_moon_sugar_01
+  - INTV: 0
+  - BNAM:
+    - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
+    - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
+    - If ( HSHS_SkoomaCount > 0 )
+    - MessageBox, "You hide away the Moon Sugar and Skooma."
+    - Else
+    - MessageBox, "You hide away the Moon Sugar."
+    - Endif
+    - set HSHS_GreetingEmpty to 1
+    - ForceGreeting
+
+- INFO:
+  - INAM: '1094918899840230767'
+  - PNAM: '745815156108126115'
+  - NNAM: '170686103927626649'
+  - DATA:
+      dialog_type: Persuasion
+      disp_index: 0
+      rank: null
+      sex: null
+      pc_rank: null
+      padding: 0
+  - CNAM: Pawnbroker
+  - NAME: You will have to get rid of that Moon Sugar if you want any services from me. I don't want any trouble.
+  - SCVR: 0ARX0Khajiit
+  - INTV: 0
+  - SCVR: 15IX2ingred_moon_sugar_01
+  - INTV: 0
+  - BNAM:
+    - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
+    - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
+    - If ( HSHS_SkoomaCount > 0 )
+    - MessageBox, "You hide away the Moon Sugar and Skooma."
+    - Else
+    - MessageBox, "You hide away the Moon Sugar."
+    - Endif
+    - set HSHS_GreetingEmpty to 1
+    - ForceGreeting
+
+- INFO:
+  - INAM: '170686103927626649'
+  - PNAM: '1094918899840230767'
+  - NNAM: '437731057154051750'
+  - DATA:
+      dialog_type: Persuasion
+      disp_index: 0
+      rank: null
+      sex: null
+      pc_rank: null
+      padding: 0
+  - CNAM: Priest Service
+  - NAME: You will have to get rid of that Moon Sugar if you want any services from me. I don't want any trouble.
+  - SCVR: 0ARX0Khajiit
+  - INTV: 0
+  - SCVR: 15IX2ingred_moon_sugar_01
+  - INTV: 0
+  - BNAM:
+    - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
+    - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
+    - If ( HSHS_SkoomaCount > 0 )
+    - MessageBox, "You hide away the Moon Sugar and Skooma."
+    - Else
+    - MessageBox, "You hide away the Moon Sugar."
+    - Endif
+    - set HSHS_GreetingEmpty to 1
+    - ForceGreeting
+
+- INFO:
+  - INAM: '437731057154051750'
+  - PNAM: '170686103927626649'
+  - NNAM: '2456544071464426424'
+  - DATA:
+      dialog_type: Persuasion
+      disp_index: 0
+      rank: null
+      sex: null
+      pc_rank: null
+      padding: 0
+  - CNAM: Publican
+  - NAME: You will have to get rid of that Moon Sugar if you want any services from me. I don't want any trouble.
+  - SCVR: 0ARX0Khajiit
+  - INTV: 0
+  - SCVR: 15IX2ingred_moon_sugar_01
+  - INTV: 0
+  - BNAM:
+    - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
+    - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
+    - If ( HSHS_SkoomaCount > 0 )
+    - MessageBox, "You hide away the Moon Sugar and Skooma."
+    - Else
+    - MessageBox, "You hide away the Moon Sugar."
+    - Endif
+    - set HSHS_GreetingEmpty to 1
+    - ForceGreeting
+
+- INFO:
+  - INAM: '2456544071464426424'
+  - PNAM: '437731057154051750'
+  - NNAM: '781926249198433643'
+  - DATA:
+      dialog_type: Persuasion
+      disp_index: 0
+      rank: null
+      sex: null
+      pc_rank: null
+      padding: 0
+  - CNAM: Trader Service
+  - NAME: You will have to get rid of that Moon Sugar if you want any services from me. I don't want any trouble.
+  - SCVR: 0ARX0Khajiit
+  - INTV: 0
+  - SCVR: 15IX2ingred_moon_sugar_01
+  - INTV: 0
+  - SCVR: 37XX0ashumanu eraishah
+  - INTV: 1
+  - SCVR: 47XX0helviane desele
+  - INTV: 1
+  - SCVR: 57XX0brathus dals
+  - INTV: 1
+  - BNAM:
+    - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
+    - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
+    - If ( HSHS_SkoomaCount > 0 )
+    - MessageBox, "You hide away the Moon Sugar and Skooma."
+    - Else
+    - MessageBox, "You hide away the Moon Sugar."
+    - Endif
+    - set HSHS_GreetingEmpty to 1
+    - ForceGreeting
+
+- INFO:
+  - INAM: '781926249198433643'
+  - PNAM: '2456544071464426424'
+  - NNAM: '27861296403221528233'
+  - DATA:
+      dialog_type: Persuasion
+      disp_index: 0
+      rank: null
+      sex: null
+      pc_rank: null
+      padding: 0
+  - ONAM: dialog placeholder
+  - CNAM: Wise Woman Service
+  - NAME: You will have to get rid of that Moon Sugar if you want any services from me. I don't want any trouble.
+  - SCVR: 0ARX0Khajiit
+  - INTV: 0
+  - SCVR: 15IX2ingred_moon_sugar_01
+  - INTV: 0
+  - BNAM:
+    - ;HSHS_ let WiseWomen buy the sugar
+
+- INFO:
+  - INAM: '27861296403221528233'
+  - PNAM: '781926249198433643'
+  - NNAM: '287378702993122269'
+  - DATA:
+      dialog_type: Persuasion
+      disp_index: 0
+      rank: null
+      sex: null
+      pc_rank: null
+      padding: 0
+  - CNAM: Alchemist Service
+  - NAME: I'm not going to buy that Skooma from you. Get rid of it and then we can trade.
+  - SCVR: 0ARX0Khajiit
+  - INTV: 0
+  - SCVR: 15IX2potion_skooma_01
+  - INTV: 0
+  - SCVR: 37XX0andilu drothan
+  - INTV: 1
+  - SCVR: 47XX0rolasa oren
+  - INTV: 1
+  - BNAM:
+    - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
+    - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
+    - MessageBox, "You hide away the skooma."
+    - set HSHS_GreetingEmpty to 1
+    - ForceGreeting
+
+- INFO:
+  - INAM: '287378702993122269'
+  - PNAM: '27861296403221528233'
+  - NNAM: '29036265711176618107'
+  - DATA:
+      dialog_type: Persuasion
+      disp_index: 0
+      rank: null
+      sex: null
+      pc_rank: null
+      padding: 0
+  - CNAM: Apothecary Service
+  - NAME: I'm not going to buy that Skooma from you. Get rid of it and then we can trade.
+  - SCVR: 0ARX0Khajiit
+  - INTV: 0
+  - SCVR: 15IX2potion_skooma_01
+  - INTV: 0
+  - BNAM:
+    - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
+    - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
+    - MessageBox, "You hide away the skooma."
+    - set HSHS_GreetingEmpty to 1
+    - ForceGreeting
+
+- INFO:
+  - INAM: '29036265711176618107'
+  - PNAM: '287378702993122269'
+  - NNAM: '2821782961190224094'
+  - DATA:
+      dialog_type: Persuasion
+      disp_index: 0
+      rank: null
+      sex: null
+      pc_rank: null
+      padding: 0
+  - CNAM: Healer Service
+  - NAME: I'm not going to buy that Skooma from you. Get rid of it and then we can trade.
+  - SCVR: 0ARX0Khajiit
+  - INTV: 0
+  - SCVR: 15IX2potion_skooma_01
+  - INTV: 0
+  - BNAM:
+    - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
+    - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
+    - MessageBox, "You hide away the skooma."
+    - set HSHS_GreetingEmpty to 1
+    - ForceGreeting
+
+- INFO:
+  - INAM: '2821782961190224094'
+  - PNAM: '29036265711176618107'
+  - NNAM: '3576191201815529709'
+  - DATA:
+      dialog_type: Persuasion
+      disp_index: 0
+      rank: null
+      sex: null
+      pc_rank: null
+      padding: 0
+  - CNAM: Pawnbroker
+  - NAME: I'm not going to buy that Skooma from you. Get rid of it and then we can trade.
+  - SCVR: 0ARX0Khajiit
+  - INTV: 0
+  - SCVR: 15IX2potion_skooma_01
+  - INTV: 0
+  - BNAM:
+    - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
+    - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
+    - MessageBox, "You hide away the skooma."
+    - set HSHS_GreetingEmpty to 1
+    - ForceGreeting
+
+- INFO:
+  - INAM: '3576191201815529709'
+  - PNAM: '2821782961190224094'
+  - NNAM: '3034922702178419782'
+  - DATA:
+      dialog_type: Persuasion
+      disp_index: 0
+      rank: null
+      sex: null
+      pc_rank: null
+      padding: 0
+  - CNAM: Priest Service
+  - NAME: I'm not going to buy that Skooma from you. Get rid of it and then we can trade.
+  - SCVR: 0ARX0Khajiit
+  - INTV: 0
+  - SCVR: 15IX2potion_skooma_01
+  - INTV: 0
+  - BNAM:
+    - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
+    - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
+    - MessageBox, "You hide away the skooma."
+    - set HSHS_GreetingEmpty to 1
+    - ForceGreeting
+
+- INFO:
+  - INAM: '3034922702178419782'
+  - PNAM: '3576191201815529709'
+  - NNAM: '277125218205084722'
+  - DATA:
+      dialog_type: Persuasion
+      disp_index: 0
+      rank: null
+      sex: null
+      pc_rank: null
+      padding: 0
+  - CNAM: Publican
+  - NAME: I'm not going to buy that Skooma from you. Get rid of it and then we can trade.
+  - SCVR: 0ARX0Khajiit
+  - INTV: 0
+  - SCVR: 15IX2potion_skooma_01
+  - INTV: 0
+  - BNAM:
+    - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
+    - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
+    - MessageBox, "You hide away the skooma."
+    - set HSHS_GreetingEmpty to 1
+    - ForceGreeting
+
+- INFO:
+  - INAM: '277125218205084722'
+  - PNAM: '3034922702178419782'
+  - NNAM: '2797025664259225507'
+  - DATA:
+      dialog_type: Persuasion
+      disp_index: 0
+      rank: null
+      sex: null
+      pc_rank: null
+      padding: 0
+  - CNAM: Trader Service
+  - NAME: I'm not going to buy that Skooma from you. Get rid of it and then we can trade.
+  - SCVR: 0ARX0Khajiit
+  - INTV: 0
+  - SCVR: 15IX2potion_skooma_01
+  - INTV: 0
+  - SCVR: 37XX0ashumanu eraishah
+  - INTV: 1
+  - SCVR: 47XX0helviane desele
+  - INTV: 1
+  - SCVR: 57XX0brathus dals
+  - INTV: 1
+  - BNAM:
+    - set HSHS_SugarCount to ( player->GetItemCount "ingred_moon_sugar_01" )
+    - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
+    - MessageBox, "You hide away the skooma."
+    - set HSHS_GreetingEmpty to 1
+    - ForceGreeting
+
+- INFO:
+  - INAM: '2797025664259225507'
+  - PNAM: '277125218205084722'
+  - NNAM: '30722440423230439'
+  - DATA:
+      dialog_type: Persuasion
+      disp_index: 0
+      rank: null
+      sex: null
+      pc_rank: null
+      padding: 0
+  - CNAM: Wise Woman Service
+  - NAME: We're not going to buy that Skooma from you. Put it away and we can trade.
+  - SCVR: 0ARX0Khajiit
+  - INTV: 0
+  - SCVR: 15IX2potion_skooma_01
+  - INTV: 0
+  - BNAM:
+    - ;HSHS_ Wise Women won't remove the sugar
+    - set HSHS_SkoomaCount to ( player->GetItemCount "potion_skooma_01" )
+    - MessageBox, "You push aside the skooma."
+    - set HSHS_GreetingEmpty to 1
+    - ForceGreeting
+
+- DIAL:
+  - NAME: Greeting 0
+  - DATA: Greeting
+
+- INFO:
+  - INAM: '765712913203398811'
+  - PNAM: '31089205411193327763'
+  - NNAM: '875317795149451008'
+  - DATA:
+      dialog_type: Greeting
+      disp_index: 0
+      rank: null
+      sex: null
+      pc_rank: null
+      padding: 0
+  - NAME:  
+  - SCVR: 12sX0HSHS_GreetingEmpty
+  - INTV: 1
+  - BNAM:
+    - ;HSHS - player auto-hides sugar & skooma to be able to barter afterwards
+    - If ( HSHS_SugarCount > 0 )
+    - player->RemoveItem, "ingred_moon_sugar_01", HSHS_SugarCount
+    - Endif
+    - If ( HSHS_SkoomaCount > 0 )
+    - player->RemoveItem, "potion_skooma_01", HSHS_SkoomaCount
+    - Endif
+    - set HSHS_GreetingEmpty to 0
+    - ;script will give them back when out of dialogue
+    - player->startscript "HSHS_script"

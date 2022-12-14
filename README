@@ -1,0 +1,39 @@
+
+-------------------------------------------------------------
+Hide the Sugar, Hide the Skooma
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+
+Auto-hides your skooma or sugar while trying to barter with someone who doesn't want any trouble. 
+Just click on Barter again.
+
+
+
+Alternate tweaked version:
+-------------------------------------------------------------
+- also lets Wise Women who barter buy moon sugar,
+- also lets vendors who non-randomly sell moon sugar, skooma or paraphernalia buy either from you.
+These are:
+Ashumanu Eraishah at the tradehouse in Suran
+Helviane Desele at Desele's House of Earthly Delights in Suran
+Brathus Dals at the No Name Club in Vivec's Hlaalu Canton plaza
+Rolasa Oren in the upper waistworks of Vivec's Foreign Quarter
+Andilu Drothan in the Lower Waistworks in Vivec's Foreign Quarter
+
+
+Alternate tweaked + MCP "Service refusal filtering" version:
+-------------------------------------------------------------
+- use if you have the Morrowind Code Patch installed with the "Service refusal filtering" option checked:
+entirely prevents any skooma- or moon sugar- related interruptions if you try to access services besides Barter.
+You won't even need to automatically hide anything if you ask to for Spells, Training, Repair, etc.
+If you use this without the MCP option, any and all traders will buy skooma and sugar.
+
+
+
+Use only one ESP,
+Will conflict with anything that edits moon sugar/skooma buying restrictions,
+Will not conflict with anything that edits the NPCs mentioned above
+
+-------------------------------------------------------------
+v1
